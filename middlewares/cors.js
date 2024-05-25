@@ -3,7 +3,7 @@ const allowedCors = [
     'https://students-projects.ru',
     'http://localhost:3000',
     'http://localhost:3001',
-    "https://pindie-backend134.nomoredomainswork.ru"
+    'https://pindie-frontend134.nomoredomainswork.ru'
 ]
 
 function cors(req, res, next) {
