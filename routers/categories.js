@@ -18,7 +18,7 @@ categoriesRouter.get("/categories/:id", findCategoryById, sendCategoryById);
     createCategory,
     sendCategoryCreated
 ); 
-categoriesRouter.put ('/categories/:id',checkEmptyName, checkAuth,checkIsCategoryExists, updateCategory, sendCategoryUpdated)
+categoriesRouter.put ('/categories/:id',checkEmptyName, checkAuth, updateCategory, sendCategoryUpdated)
 
 categoriesRouter.delete('/categories/:id', checkAuth, deleteCategory, sendCategoryDeleted)
 

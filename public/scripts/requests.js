@@ -211,8 +211,10 @@ const addDeleteUsersListeners = async () => {
 };
 
 const putGame = async id => {
+  console.log('id =>' + id)
   try {
     const response = await putData(`/api/games/${id}`, currentState);
+    console.log(response)
     if (response instanceof Error) {
       throw new Error(response.message);
     }

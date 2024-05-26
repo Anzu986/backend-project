@@ -38,6 +38,9 @@ const postData = async (url, data) => {
 const putData = async (url, data) => {
   const jwt = getJWTFromCookie();
   try {
+
+    
+   
     const response = await fetch(url, {
       method: "PUT",
       headers: {
@@ -46,6 +49,9 @@ const putData = async (url, data) => {
       },
       body: JSON.stringify(data)
     });
+
+    
+
     if (response.status !== 200) {
       throw new Error((await response.json()).message);
     }
